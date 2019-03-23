@@ -1,0 +1,8 @@
+<div class="row">
+  <div class="col-xs-12">
+    <img *ngIf="book && book.bookPhoto" [src]="book.bookPhoto" style="max-width: 450px;">
+    <h2 *ngIf="book">{{book.title}}</h2>
+    <h2 *ngIf="book">{{book.auteur}}</h2>
+    <button class="btn btn-default" (click)="onBack()">Retour</button>
+  </div>
+</div>
